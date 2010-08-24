@@ -1,0 +1,6 @@
+#left-col
+  %h2 Stats
+  - pretty_hash(@tube_stats).each do |key, value|
+    %p= "#{key}: #{value}"
+
+#right-col

@@ -1,0 +1,6 @@
+*~
+*.swp
+config/db.rb
+.sass*
+*.log
+*.tmp

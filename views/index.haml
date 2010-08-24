@@ -1,0 +1,11 @@
+#left-col
+  %h2 Stats
+  - pretty_hash(@stats).each do |key, value|
+    %p= "#{key}: #{value}"
+
+#right-col
+  %h2 Tubes
+  - @tubes.each do |tube|
+    - total_jobs = @tube_stats[tube]['total-jobs']
+    %a{:href => "/tube/#{tube}"} 
+      %p= "#{tube} (#{total_jobs} total job" + (total_jobs == 1 ? '' : 's') + ")"
