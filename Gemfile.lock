@@ -1,0 +1,21 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    beanstalk-client (1.1.0)
+    compass (0.10.5)
+      haml (>= 3.0.4)
+    haml (3.0.18)
+    json (1.4.6)
+    rack (1.2.1)
+    sinatra (1.0)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  beanstalk-client
+  compass
+  haml
+  json
+  sinatra
