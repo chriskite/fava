@@ -6,6 +6,8 @@ require 'compass'
 require File.dirname(__FILE__) + '/app'
 path = ''
 
+$BEANSTALK_HOST='localhost'
+
 set :root, path
 set :views, path + 'views'
 set :public,  path + 'public'

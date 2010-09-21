@@ -12,7 +12,7 @@ end
 
 get '/' do
   server = BeanstalkServer.new
-  @header = 'Fava - Beanstalk Stats for localhost'
+  @header = "Fava - Beanstalk Stats for #{$BEANSTALK_HOST}"
   @stats = server.stats
   @tubes = server.list_tubes.values.first
   @tube_stats = @tubes.inject({}) { |r, tube| r[tube] = server.stats_tube(tube); r }
